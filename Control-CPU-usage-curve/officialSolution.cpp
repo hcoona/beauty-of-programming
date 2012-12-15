@@ -1,13 +1,29 @@
-#include <Windows.h>
+#include "OfficialSolution.h"
+
 #define _USE_MATH_DEFINES
+#include <Windows.h>
+#include <stdexcept>
 #include <cmath>
+#include "FixProcessorHelper.h"
+
+OfficialSolution::OfficialSolution(void)
+{
+}
+
+OfficialSolution::~OfficialSolution(void)
+{
+}
 
 static const double SPLIT = 0.01;
 static const int COUNT = 200;
 static const int INTERVAL = 300;
 
-int officialSineCurve(void)
+void OfficialSolution::Draw(void)
 {
+    if(!FixProcessorHelper::FixCurrentProcessToProcessorByMask(1)) {
+        throw new std::runtime_error("Fix process affinity failed!");
+    }
+
     DWORD busySpan[COUNT];
     DWORD idleSpan[COUNT];
     const int HALF = INTERVAL / 2;
@@ -27,5 +43,4 @@ int officialSineCurve(void)
         Sleep(idleSpan[j]);
         j++;
     }
-    return 0;
 }
