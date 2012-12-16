@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Control-CPU-usage-curve", "Control-CPU-usage-curve\Control-CPU-usage-curve.vcxproj", "{ABD9DB6B-23FB-4908-90E7-74D44D85D612}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chinese-Chess-Kings", "Chinese-Chess-Kings\Chinese-Chess-Kings.vcxproj", "{025E403C-DD2E-425E-9019-3091567741AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -18,6 +20,10 @@ Global
 		{ABD9DB6B-23FB-4908-90E7-74D44D85D612}.Debug|Win32.Build.0 = Debug|Win32
 		{ABD9DB6B-23FB-4908-90E7-74D44D85D612}.Release|Win32.ActiveCfg = Release|Win32
 		{ABD9DB6B-23FB-4908-90E7-74D44D85D612}.Release|Win32.Build.0 = Release|Win32
+		{025E403C-DD2E-425E-9019-3091567741AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{025E403C-DD2E-425E-9019-3091567741AB}.Debug|Win32.Build.0 = Debug|Win32
+		{025E403C-DD2E-425E-9019-3091567741AB}.Release|Win32.ActiveCfg = Release|Win32
+		{025E403C-DD2E-425E-9019-3091567741AB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
