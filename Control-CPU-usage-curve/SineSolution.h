@@ -11,7 +11,7 @@ private:
     SineSolution & operator=(const SineSolution &);
 protected:
     static const DWORD INTERVAL = 300;
-    static const int SPAN_COUNT = 36;
+    static const int SPAN_COUNT = 36 * 2;
     DWORD idleSpans[SPAN_COUNT];
     DWORD busySpans[SPAN_COUNT];
 public:

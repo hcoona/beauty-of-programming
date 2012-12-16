@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdvancedSolution.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="NaiveSolution.cpp" />
     <ClCompile Include="OfficialSolution.cpp" />
@@ -84,6 +85,7 @@
     <ClCompile Include="StraightForwardSolution.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdvancedSolution.h" />
     <ClInclude Include="FixProcessorHelper.h" />
     <ClInclude Include="NaiveSolution.h" />
     <ClInclude Include="OfficialSolution.h" />

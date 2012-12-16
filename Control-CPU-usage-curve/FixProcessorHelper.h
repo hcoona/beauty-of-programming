@@ -15,5 +15,11 @@ public:
         HANDLE hProcess = GetCurrentProcess();
         return FixProcessToProcessorByMask(hProcess, dwProcessAffinityMask);
     }
+    static BOOL FixThreadToProcessorByMask(HANDLE hThread, DWORD_PTR dwThreadAffinityMask) {
+        return SetThreadAffinityMask(hThread, dwThreadAffinityMask);
+    }
+    static BOOL FixCurrentThreadToProcessorByMask(DWORD_PTR dwThreadAffinityMask) {
+        HANDLE hThread = GetCurrentThread();
+        return FixThreadToProcessorByMask(hThread, dwThreadAffinityMask);
+    }
 };
-

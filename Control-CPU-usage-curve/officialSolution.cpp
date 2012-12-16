@@ -20,10 +20,6 @@ static const int INTERVAL = 300;
 
 void OfficialSolution::Draw(void)
 {
-    if(!FixProcessorHelper::FixCurrentProcessToProcessorByMask(1)) {
-        throw new std::runtime_error("Fix process affinity failed!");
-    }
-
     DWORD busySpan[COUNT];
     DWORD idleSpan[COUNT];
     const int HALF = INTERVAL / 2;

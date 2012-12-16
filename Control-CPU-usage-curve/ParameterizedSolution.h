@@ -20,10 +20,6 @@ public:
     ParameterizedSolution(void) { }
     virtual ~ParameterizedSolution(void) { }
     virtual void Draw(void) {
-        if(!FixProcessorHelper::FixCurrentProcessToProcessorByMask(1)) {
-            throw new std::runtime_error("Fix process affinity failed!");
-        }
-
         while(true) {
             const DWORD START_TICKS = GetTickCount();
             while(GetTickCount() - START_TICKS <= BUSY_TIME) ;

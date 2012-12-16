@@ -22,10 +22,6 @@ SineSolution::~SineSolution(void)
 
 void SineSolution::Draw(void)
 {
-    if(!FixProcessorHelper::FixCurrentProcessToProcessorByMask(1)) {
-        throw new std::runtime_error("Fix process affinity failed!");
-    }
-
     int counter = 0;
     while(true) {
         const DWORD & BUSY_TIME = busySpans[counter];
